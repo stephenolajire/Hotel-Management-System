@@ -1,0 +1,9 @@
+
+.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.link:hover {
+  color: var(--primary-color);
+}

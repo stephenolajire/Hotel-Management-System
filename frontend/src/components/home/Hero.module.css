@@ -1,0 +1,373 @@
+/* Hero Component Styles */
+.heroContainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    overflow: hidden;
+  }
+  
+  /* Carousel Customization */
+  .carousel {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Override react-multi-carousel default styles */
+  .heroContainer :global(.react-multi-carousel-list) {
+    height: 100%;
+  }
+  
+  .heroContainer :global(.react-multi-carousel-track) {
+    height: 100%;
+  }
+  
+  .heroContainer :global(.react-multi-carousel-item) {
+    height: 100%;
+  }
+  
+  /* Slide Styling */
+  .slide {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.7);
+    transition: var(--transition-slow);
+  }
+  
+  /* Parallax effect on hover */
+  .slide:hover .backgroundImage {
+    transform: scale(1.05);
+    filter: brightness(0.6);
+  }
+  
+  /* Content Overlay */
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    max-width: 800px;
+    padding: var(--spacing-2xl);
+    background: rgba(27, 73, 101, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content h1 {
+    font-family: var(--font-primary);
+    font-size: var(--fs-3xl);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  .content p {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-lg);
+    font-weight: 300;
+    color: var(--off-white);
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Custom Carousel Controls */
+  .heroContainer :global(.react-multiple-carousel__arrow) {
+    background: rgba(27, 73, 101, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-full);
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    transition: var(--transition-normal);
+    backdrop-filter: blur(10px);
+  }
+  
+  .heroContainer :global(.react-multiple-carousel__arrow):hover {
+    background: rgba(27, 73, 101, 0.95);
+    border-color: var(--accent-color);
+    transform: scale(1.1);
+  }
+  
+  .heroContainer :global(.react-multiple-carousel__arrow--left) {
+    left: var(--spacing-lg);
+  }
+  
+  .heroContainer :global(.react-multiple-carousel__arrow--right) {
+    right: var(--spacing-lg);
+  }
+  
+  .heroContainer :global(.react-multiple-carousel__arrow::before) {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  /* Overlay gradient for better text readability */
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(27, 73, 101, 0.3) 0%,
+      rgba(27, 73, 101, 0.1) 50%,
+      rgba(202, 165, 94, 0.2) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .heroContainer {
+      min-height: 500px;
+    }
+    
+    .slide {
+      min-height: 500px;
+    }
+    
+    .content {
+      max-width: 600px;
+      padding: var(--spacing-xl);
+    }
+    
+    .content h1 {
+      font-size: var(--fs-2xl);
+    }
+    
+    .content p {
+      font-size: var(--fs-md);
+    }
+    
+    .heroContainer :global(.react-multiple-carousel__arrow) {
+      width: 45px;
+      height: 45px;
+      min-width: 45px;
+      min-height: 45px;
+    }
+    
+    .heroContainer :global(.react-multiple-carousel__arrow--left) {
+      left: var(--spacing-md);
+    }
+    
+    .heroContainer :global(.react-multiple-carousel__arrow--right) {
+      right: var(--spacing-md);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroContainer {
+      height: 70vh;
+      min-height: 400px;
+    }
+    
+    .slide {
+      height: 70vh;
+      min-height: 400px;
+    }
+    
+    .backgroundImage {
+      background-attachment: scroll; /* Better performance on mobile */
+    }
+
+    .contentDiv {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content {
+      max-width: 90%;
+      padding: var(--spacing-lg);
+      margin: 0 var(--spacing-md);
+      background: rgba(27, 73, 101, 0.8);
+      backdrop-filter: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .content h1 {
+      font-size: var(--fs-xl);
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .content p {
+      font-size: var(--fs-base);
+    }
+    
+    .heroContainer :global(.react-multi-carousel-dot-list) {
+      bottom: var(--spacing-lg);
+    }
+    
+    .heroContainer :global(.react-multi-carousel-dot) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .heroContainer {
+      height: 60vh;
+      min-height: 350px;
+    }
+    
+    .slide {
+      height: 60vh;
+      min-height: 350px;
+    }
+    
+    .content {
+      padding: var(--spacing-md);
+      border-radius: var(--radius-md);
+      background: rgba(27, 73, 101, 0.85);
+      backdrop-filter: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+      /* height: 100%; */
+    }
+    
+    .content h1 {
+      font-size: var(--fs-lg);
+      line-height: 1.2;
+    }
+    
+    .content p {
+      font-size: var(--fs-sm);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heroContainer {
+      height: 50vh;
+      min-height: 300px;
+    }
+    
+    .slide {
+      height: 50vh;
+      min-height: 300px;
+    }
+    
+    .content {
+      padding: var(--spacing-sm);
+      max-width: 95%;
+      background: rgba(27, 73, 101, 0.35);
+      backdrop-filter: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    
+    .content h1 {
+      font-size: var(--fs-md);
+      margin-bottom: var(--spacing-sm);
+    }
+    
+    .content p {
+      font-size: var(--fs-xs);
+    }
+    
+    .heroContainer :global(.react-multi-carousel-dot-list) {
+      bottom: var(--spacing-md);
+    }
+  }
+  
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .backgroundImage,
+    .content,
+    .heroContainer :global(.react-multiple-carousel__arrow),
+    .heroContainer :global(.react-multi-carousel-dot) {
+      transition: none;
+      animation: none;
+    }
+    
+    .slide:hover .backgroundImage {
+      transform: none;
+    }
+    
+    .heroContainer :global(.react-multiple-carousel__arrow):hover {
+      transform: none;
+    }
+  }
+  
+  /* High contrast mode */
+  @media (prefers-contrast: high) {
+    .content {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid var(--white);
+    }
+    
+    .heroContainer :global(.react-multiple-carousel__arrow) {
+      background: var(--black);
+      border: 2px solid var(--white);
+    }
+    
+    .heroContainer :global(.react-multi-carousel-dot) {
+      background: var(--white);
+      border: 2px solid var(--black);
+    }
+  }
+  
+  /* Focus states for accessibility */
+  .heroContainer :global(.react-multiple-carousel__arrow):focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+  
+  .heroContainer :global(.react-multi-carousel-dot):focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
