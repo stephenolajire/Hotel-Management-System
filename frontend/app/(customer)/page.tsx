@@ -133,7 +133,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section className="px-4 sm:px-6 lg:px-8 py-8"></section>
+        {/* <section className="px-4 sm:px-6 lg:px-8 py-8"></section> */}
       </main>
     </div>
   );
