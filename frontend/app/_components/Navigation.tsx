@@ -44,7 +44,7 @@ const Navigation = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`transition-colors hover:text-amber-700 text-md font-bold ${
+                className={`transition-colors hover:text-amber-700 text-xl font-bold ${
                   isActive ? "text-amber-900 font-semibold" : "text-gray-700"
                 }`}
               >
@@ -68,7 +68,7 @@ const Navigation = () => {
         {/* Desktop Auth Links */}
         <div className="hidden lg:flex flex-row gap-5 items-center">
           <Link
-            className="text-gray-700 text-md font-bold cursor-pointer hover:text-amber-700"
+            className="text-gray-700 text-xl font-bold cursor-pointer hover:text-amber-700"
             href="/login"
           >
             Login

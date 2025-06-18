@@ -7,7 +7,7 @@ const RoomSection = () => {
       <div className="relative w-full h-auto ">
         <div className="flex items-center flex-row justify-between h-[50px]">
           <div className="w-auto h-auto">
-            <p className="text-gray-700 text-md font-bold">Standard</p>
+            <p className="text-gray-700 text-xl font-bold">Standard</p>
             <div className="flex flex-row gap-2 mb-1 mt-1 items-end">
               <Home size={24} color="#374151" className="" />
               <span className="text-sm sm:text-base text-gray-700">
