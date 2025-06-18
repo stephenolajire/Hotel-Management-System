@@ -23,7 +23,7 @@ const Navigation = () => {
     <header className="w-full h-auto sticky z-10 top-0 left-0 bg-white shadow-md">
       <nav className="py-5 px-4 sm:px-6 lg:px-8 w-full flex flex-row items-center justify-between">
         <div className="w-auto flex items-center justify-between flex-1 lg:flex-none">
-          <Image src="/globe.svg" alt="hotel logo" height={50} width={50} />
+          <Image className=" h-[40px] w-[40px] sm:h-[60px] sm:w-[60px] rounded-full" src="/hero.jpg" alt="hotel logo" height={50} width={50} />
           <button
             className="lg:hidden ml-auto text-gray-800"
             onClick={toggleMenu}
@@ -83,7 +83,7 @@ const Navigation = () => {
 
       {/* Mobile Nav */}
       {menuOpen && (
-        <div className="lg:hidden px-4 pb-5">
+        <div className="lg:hidden px-4 pb-5 transition-all duration-500">
           <div className="flex flex-col space-y-4">
             {NavLink.map((link) => {
               const isActive =
