@@ -60,7 +60,7 @@ const Navigation = () => {
             <input
               type="search"
               placeholder="search for room"
-              className="w-full h-[40px] border-2 border-amber-900 rounded-3xl pl-5"
+              className="w-full h-[40px] border-2 border-gray-700 rounded-3xl pl-5"
             />
           </form>
         </div>
