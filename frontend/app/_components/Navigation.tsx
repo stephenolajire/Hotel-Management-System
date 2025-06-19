@@ -23,14 +23,13 @@ const Navigation = () => {
     <header className="w-full h-auto sticky z-10 top-0 left-0 bg-white shadow-md">
       <nav className="py-5 px-4 sm:px-6 lg:px-8 w-full flex flex-row items-center justify-between">
         <div className="w-auto flex items-center justify-between flex-1 lg:flex-none">
-          <Image className=" h-[40px] w-[40px] sm:h-[60px] sm:w-[60px] rounded-full" src="/hero.jpg" alt="hotel logo" height={50} width={50} />
-          <button
-            className="lg:hidden ml-auto text-gray-800"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          <Image
+            className=" h-[40px] w-[40px] sm:h-[60px] sm:w-[60px] rounded-full"
+            src="/hero.jpg"
+            alt="hotel logo"
+            height={50}
+            width={50}
+          />
         </div>
 
         {/* Desktop Nav */}
@@ -55,8 +54,8 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Search */}
-        <div className="hidden lg:block w-[300px] h-auto">
-          <form className="w-auto h-auto">
+        <div className=" w-[200px]  sm:w-[250px] md:w-[400px] h-auto flex flex-row justify-between">
+          <form className="h-auto w-[190px] sm:w-[250px] md:w-[400px]">
             <input
               type="search"
               placeholder="search for room"
@@ -64,6 +63,14 @@ const Navigation = () => {
             />
           </form>
         </div>
+
+          <button
+            className="lg:hidden ml-auto text-gray-800"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
 
         {/* Desktop Auth Links */}
         <div className="hidden lg:flex flex-row gap-5 items-center">
@@ -104,13 +111,13 @@ const Navigation = () => {
               );
             })}
 
-            <form className="w-full">
+            {/* <form className="w-full">
               <input
                 type="search"
                 placeholder="search for room"
                 className="w-full h-[40px] border-2 border-amber-900 rounded-3xl pl-5"
               />
-            </form>
+            </form> */}
 
             <div className="flex flex-col gap-3 mt-3">
               <Link
