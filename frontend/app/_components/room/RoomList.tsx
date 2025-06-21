@@ -35,7 +35,7 @@ const RoomList = () => {
                 </p>
               </div>
               <div className="grid grid-cols-2 items-left">
-                <h1 className="uppercase text-lg md:text-xl font-bold text-black/50 ">
+                <h1 className="capitalize md:uppercase text-lg md:text-xl font-bold text-black/50 ">
                   Status
                 </h1>
                 <p className="capitalize text-gray-700 lg:text-lg text:sm">
@@ -43,7 +43,7 @@ const RoomList = () => {
                 </p>
               </div>
               <div className="grid grid-cols-2 items-left">
-                <h1 className="uppercase text-lg md:text-xl font-bold text-black/50 ">
+                <h1 className="capitalize md:uppercase text-lg md:text-xl font-bold text-black/50 ">
                   Capacity
                 </h1>
                 <p className="capitalize text-gray-700 lg:text-lg text:sm ">
@@ -51,7 +51,7 @@ const RoomList = () => {
                 </p>
               </div>
               <div className="grid grid-cols-2 items-left">
-                <h1 className="uppercase text-lg md:text-xl font-bold text-black/50 ">
+                <h1 className="capitalize md:uppercase text-lg md:text-xl font-bold text-black/50 ">
                   Size
                 </h1>
                 <p className="capitalize text-gray-700 lg:text-lg text:sm">
@@ -59,7 +59,7 @@ const RoomList = () => {
                 </p>
               </div>
               <div className="grid grid-cols-2 items-left">
-                <h1 className="uppercase text-lg md:text-xl font-bold text-black/50 ">
+                <h1 className="capitalize md:uppercase text-lg md:text-xl font-bold text-black/50 ">
                   Bed
                 </h1>
                 <p className="capitalize text-gray-700 lg:text-lg text:sm">

@@ -21,7 +21,7 @@ const Navigation = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <header className="w-full h-auto sticky z-10 top-0 left-0 bg-white shadow-md">
+    <header className="w-full h-auto sticky z-1000 top-0 left-0 bg-white shadow-md">
       <nav className="py-5 px-4 sm:px-6 lg:px-8 w-full flex flex-row items-center justify-between">
         <div className="w-auto flex items-center justify-between flex-1 lg:flex-none">
           <Image

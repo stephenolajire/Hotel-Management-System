@@ -5,6 +5,7 @@ import { MoveRight, Star } from "lucide-react";
 import RoomSection from "../_components/home/RoomSection";
 import TopRoomSection from "../_components/home/TopRoomSection";
 import Promotion from "../_components/home/Promotion";
+import Testimonies from "../_components/home/Testimonies";
 
 export default function HomePage() {
   return (
@@ -59,6 +60,9 @@ export default function HomePage() {
           <TopRoomSection />
           <TopRoomSection />
           <TopRoomSection />
+        </section>
+        <section className="pt-4 md:pt-15 relative">
+          <Testimonies/>
         </section>
 
         <div className="w-full px-4 sm:px-5 lg:px-8 py-8">

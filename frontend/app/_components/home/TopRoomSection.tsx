@@ -5,8 +5,8 @@ import { MoveRight, Star } from "lucide-react";
 const TopRoomSection = () => {
   return (
     <section className="w-full h-auto">
-      <div className="relative w-[200px] sm:w-[220px] lg:w-[250px] xl:w-[360px] h-auto">
-        <div className="w-full h-[150px] sm:h-[180px] xl:h-[250px] lg:h-[200px]  relative rounded-2xl">
+      <div className="relative w-[250px] sm:w-[260px] sm:h-[200px] lg:w-[280px] xl:w-[360px] xl:h-[250px] lg:h-[250px] rounded-lg mt-3 h-auto">
+        <div className="relative w-[250px] sm:w-[260px] sm:h-[200px] lg:w-[280px] xl:w-[360px] xl:h-[250px] lg:h-[250px] h-[180px] rounded-lg mt-3">
           <Image
             src="/top_2.jpg"
             alt="top room"
@@ -25,7 +25,9 @@ const TopRoomSection = () => {
             </div>
             <span className="text-gray-700">(893 reviews)</span>
           </div>
-          <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl mt-3 text-gray-700 font-bold">$250</p>
+          <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl mt-3 text-gray-700 font-bold">
+            $250
+          </p>
         </div>
       </div>
     </section>

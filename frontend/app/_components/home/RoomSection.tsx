@@ -19,7 +19,7 @@ const RoomSection = () => {
             <MoveRight size={20} className="sm:w-6 sm:h-6 text-inherit" />
           </div>
         </div>
-        <div className="relative w-[200px] sm:w-[220px] sm:h-[220px] lg:w-[250px] xl:w-[360px] xl:h-[250px] lg:h-[250px] h-[150px] rounded-lg mt-3">
+        <div className="relative w-[250px] sm:w-[260px] sm:h-[200px] lg:w-[280px] xl:w-[360px] xl:h-[250px] lg:h-[250px] h-[180px] rounded-lg mt-3">
           <Image
             src="/room_1.jpg"
             fill
