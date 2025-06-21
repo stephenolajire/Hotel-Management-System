@@ -15,11 +15,19 @@ const page = () => {
           </p>
         </div>
       </div>
-      <section>
+      <section className="hidden md:block">
         <RoomList />
         <RoomOld />
         <RoomList />
         <RoomOld />
+        <RoomList />
+      </section>
+      <section className="flex flex-col gap-4 md:hidden">
+        <RoomList />
+        {/* <RoomOld /> */}
+        <RoomList />
+        {/* <RoomOld /> */}
+        <RoomList />
         <RoomList />
       </section>
     </main>
