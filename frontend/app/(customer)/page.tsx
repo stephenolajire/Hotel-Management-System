@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Hero from "../_components/Hero";
+import Hero from "../_components/home/Hero";
 import Link from "next/link";
 import { MoveRight, Star } from "lucide-react";
-import RoomSection from "../_components/RoomSection";
-import TopRoomSection from "../_components/TopRoomSection";
-import Promotion from "../_components/Promotion";
+import RoomSection from "../_components/home/RoomSection";
+import TopRoomSection from "../_components/home/TopRoomSection";
+import Promotion from "../_components/home/Promotion";
 
 export default function HomePage() {
   return (

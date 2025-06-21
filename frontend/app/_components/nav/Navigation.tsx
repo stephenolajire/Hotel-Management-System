@@ -9,8 +9,9 @@ import { Menu, X } from "lucide-react";
 const NavLink = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Rooms", href: "/rooms" },
+  { name: "Our Rooms", href: "/rooms" },
   { name: "Contact Us", href: "/contact" },
+  { name: "Our Gallery", href: "/gallery" },
 ];
 
 const Navigation = () => {
@@ -54,7 +55,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Search */}
-        <div className=" w-[200px]  sm:w-[250px] md:w-[400px] h-auto flex flex-row justify-between">
+        {/* <div className=" w-[200px]  sm:w-[250px] md:w-[400px] h-auto flex flex-row justify-between">
           <form className="h-auto w-[190px] sm:w-[250px] md:w-[400px]">
             <input
               type="search"
@@ -62,7 +63,7 @@ const Navigation = () => {
               className="w-full h-[40px] border-2 border-gray-700 rounded-3xl pl-5"
             />
           </form>
-        </div>
+        </div> */}
 
           <button
             className="lg:hidden ml-auto text-gray-800"
@@ -72,17 +73,11 @@ const Navigation = () => {
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-        {/* Desktop Auth Links */}
+        {/* Desktop  book room */}
         <div className="hidden lg:flex flex-row gap-5 items-center">
-          <Link
-            className="text-gray-700 text-xl font-bold cursor-pointer hover:text-amber-700"
-            href="/login"
-          >
-            Login
-          </Link>
-          <Link className="no-underline" href="/register">
-            <button className="w-[100px] cursor-pointer h-[40px] bg-amber-900 text-white rounded-full text-center hover:bg-amber-700 transition-colors duration-300">
-              Sign Up
+          <Link className="no-underline" href="/room">
+            <button className="w-[180px] cursor-pointer h-[48px] bg-amber-900 text-white rounded-full text-center hover:bg-amber-700 transition-colors duration-300">
+              Book Room
             </button>
           </Link>
         </div>
@@ -120,16 +115,9 @@ const Navigation = () => {
             </form> */}
 
             <div className="flex flex-col gap-3 mt-3">
-              <Link
-                className="text-gray-700 text-md font-bold hover:text-amber-700"
-                href="/login"
-                onClick={() => setMenuOpen(false)}
-              >
-                Login
-              </Link>
-              <Link href="/register" onClick={() => setMenuOpen(false)}>
+              <Link href="/room" onClick={() => setMenuOpen(false)}>
                 <button className="w-full h-[40px] bg-amber-900 text-white rounded-full text-center hover:bg-amber-700 transition-colors duration-300">
-                  Sign Up
+                  Book Room
                 </button>
               </Link>
             </div>
