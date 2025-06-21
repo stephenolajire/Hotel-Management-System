@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "encrypted-tbn0.gstatic.com",
+        port: "",
+        pathname: "/images/**",
+      },
+    ],
+    // Alternative: If you want to allow all Google Images domains
+    // domains: ['encrypted-tbn0.gstatic.com'],
+  },
 };
 
 export default nextConfig;
