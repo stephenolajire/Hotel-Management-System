@@ -69,7 +69,7 @@ const Testimonies = () => {
     setIsAutoPlaying(false);
   };
 
-  const renderStars = (rating) => {
+  const renderStars = (rating:number) => {
     return [...Array(5)].map((_, i) => (
       <Star
         key={i}
