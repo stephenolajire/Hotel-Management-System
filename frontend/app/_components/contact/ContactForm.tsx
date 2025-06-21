@@ -5,7 +5,7 @@ const ContactForm = () => {
     <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-15">
       <div className="w-full h-auto">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-700 mb-4">
-            Love to hear from you Get intouch!
+            Love to hear from you Get in touch!
         </h1>
         <div>
             <form className="flex flex-col gap-4 md:gap-8">
