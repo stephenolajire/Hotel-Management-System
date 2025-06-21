@@ -14,7 +14,7 @@ const Testimonies = () => {
       location: "New York, NY",
       rating: 5,
       text: "The stay was absolutely wonderful! The staff were incredibly friendly and attentive, and the room was immaculate with stunning city views. Every detail was perfect - from the luxurious bedding to the complimentary breakfast. Highly recommend this place for anyone looking for a premium experience!",
-      image: "/testimony.jpg",
+      image: "/contact.jpg",
       date: "March 2024",
     },
     {
@@ -23,7 +23,7 @@ const Testimonies = () => {
       location: "San Francisco, CA",
       rating: 5,
       text: "A perfect getaway! The amenities were absolutely top-notch - the spa, fitness center, and rooftop pool exceeded all expectations. The location was ideal for exploring the city, with easy access to all major attractions. The concierge service was exceptional and helped make our trip unforgettable.",
-      image: "/testimony.jpg",
+      image: "/contact.jpg",
       date: "February 2024",
     },
     {
@@ -32,7 +32,7 @@ const Testimonies = () => {
       location: "Miami, FL",
       rating: 5,
       text: "Exceptional service and a beautiful room with breathtaking ocean views! The attention to detail was remarkable - from the welcome amenities to the turndown service. The restaurant on-site served incredible cuisine, and the staff went above and beyond to accommodate our special requests. I will definitely be returning!",
-      image: "/testimony.jpg",
+      image: "/contact.jpg",
       date: "January 2024",
     },
     {
@@ -41,7 +41,7 @@ const Testimonies = () => {
       location: "Chicago, IL",
       rating: 5,
       text: "Outstanding hospitality and world-class facilities! The room was spacious, elegantly designed, and equipped with all modern amenities. The business center was perfect for my work needs, and the evening entertainment was delightful. This hotel truly sets the standard for luxury accommodation.",
-      image: "/testimony.jpg",
+      image: "/contact.jpg",
       date: "April 2024",
     },
   ];
